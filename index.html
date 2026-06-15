@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="supported-color-schemes" content="light" />
+  <title>Novo usuário cadastrado</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <table class="email-shell" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td align="center">
+
+        <table class="email-container" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+          <!-- Header -->
+          <tr>
+            <td class="email-header" align="center">
+              <img
+                class="brand-logo"
+                src="img/logo.png"
+                alt="Agroconsult"
+                width="280"
+              />
+            </td>
+          </tr>
+
+          <!-- Linha institucional com gradiente -->
+          <tr>
+            <td class="brand-divider">
+              &nbsp;
+            </td>
+          </tr>
+
+          <!-- Conteúdo principal -->
+          <tr>
+            <td class="email-content">
+
+              <h1 class="title">
+                Seu acesso foi criado
+              </h1>
+
+              <p class="paragraph">
+                Olá, <strong>{{NOME_USUARIO}}</strong>.
+              </p>
+
+              <p class="paragraph paragraph-spaced">
+                Uma conta foi criada para você no ambiente Agroconsult. Abaixo estão suas credenciais iniciais de acesso e os produtos disponíveis para sua utilização.
+              </p>
+
+              <!-- Card de credenciais -->
+              <table class="info-card credentials-card" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="card-content">
+
+                    <p class="card-title">
+                      Credenciais de acesso
+                    </p>
+
+                    <p class="credential-line">
+                      <strong>Login:</strong>
+                      <a class="email-link" href="mailto:{{EMAIL_USUARIO}}">
+                        {{EMAIL_USUARIO}}
+                      </a>
+                    </p>
+
+                    <p class="credential-line credential-line-last">
+                      <strong>Senha temporária:</strong>
+                      <span class="temporary-password">
+                        {{SENHA_TEMPORARIA}}
+                      </span>
+                    </p>
+
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Alerta de segurança -->
+              <table class="security-alert" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="security-alert-content">
+                    <p class="security-alert-text">
+                      <strong>Importante:</strong> por segurança, recomendamos alterar a senha no primeiro acesso.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Produtos disponíveis -->
+              <h2 class="section-title">
+                Produtos disponíveis para você
+              </h2>
+
+              <p class="section-description">
+                {{NOME_USUARIO}} possui acesso aos seguintes produtos:
+              </p>
+
+              <!-- Produto: Agrovalora -->
+              <table class="product-card" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="product-card-content">
+
+                    <p class="product-title">
+                      Agrovalora
+                    </p>
+
+                    <p class="product-description">
+                      Plataforma para análise rural, socioambiental e gestão de laudos.
+                    </p>
+
+                    <a class="button button-primary" href="{{LINK_AGROVALORA}}">
+                      Acessar Agrovalora
+                    </a>
+
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Produto: BDOnline -->
+              <table class="product-card product-card-last" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="product-card-content">
+
+                    <p class="product-title">
+                      BDOnline
+                    </p>
+
+                    <p class="product-description">
+                      Ambiente para consulta, acompanhamento e gestão de informações cadastrais e operacionais.
+                    </p>
+
+                    <a class="button button-secondary" href="{{LINK_BDONLINE}}">
+                      Acessar BDOnline
+                    </a>
+
+                  </td>
+                </tr>
+              </table>
+
+              <p class="support-note">
+                Caso você não reconheça este cadastro, entre em contato com a equipe Agroconsult.
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td class="email-footer" align="center">
+
+              <p class="footer-sender">
+                Enviado por <strong>Agroconsult</strong>
+              </p>
+
+              <p class="footer-address">
+                Rodovia SC 401, 4756 - Florianópolis, Santa Catarina, Brasil
+              </p>
+
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
